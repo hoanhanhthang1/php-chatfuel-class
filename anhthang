@@ -1,0 +1,4 @@
+?php
+$get = json_decode(file_get_contents("http://babe.teamod.net/api.php?text=nội+dung&gen=male&name=Puaru"),true);
+echo $get['messages'][0]['text'];
+?>
